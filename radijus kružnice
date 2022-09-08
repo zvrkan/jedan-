@@ -1,0 +1,13 @@
+<?php
+
+$radius = (int)readline("Upisite radius kruznice: ");
+
+$povrsina = $radius * $radius * 3.14;
+
+$opseg = 2 * $radius * 3.14;
+
+echo "povrsina je: " .$povrsina;
+
+echo "opseg je: " .$opseg
+
+?>
