@@ -1,0 +1,37 @@
+Napišite tri broja: 
+Broj1 = 8                                        
+Broj2 = 4                                        
+Broj3 = 0                                        
+Upisani brojevi poredani po veličini: 
+0
+4
+8
+
+<?php
+/*Napišite program koji od korisnika učitava dva cijela broja i ispisuje ih po veličini 
+(prvo ispiše manji, a onda veći broj)*/
+
+//Napredniji zadatak: učitati tri broja i poredati ih po veličini
+
+$brojevi = array();
+
+echo "Napišite tri broja: " .  "\n";
+
+for($i=1; $i <= 3; $i++)
+{
+    $brojevi[] = (int)readline("Broj" . $i . " = ");
+}
+
+$c = count($brojevi);  
+
+echo "Upisani brojevi poredani po veličini: " .  "\n";
+
+
+for($i = $c; $i > 0; $i--) 
+{
+    echo $brojevi[$i-1] . "\n";
+}
+
+//ispisuje br od većeg prema manjem
+
+?>
