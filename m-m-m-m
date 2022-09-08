@@ -1,0 +1,18 @@
+<?php
+/*
+Napišite program koji od korisnika učitava jedan znak Z i jedan broj B. 
+Neka program ispiše znak Z točno B puta tako da između svaka dva znaka 
+stavi crticu, osim iza zadnjeg znaka. Primjerice, 
+ako je Z = 'M' i B = 5, onda treba ispisati: M-M-M-M-M
+*/
+
+$z = readline("Upisite jedan znak: ");
+$b = readline("Upisite jedan broj: ");
+
+for ($i = 1; $i <= $b; $i++) {
+    echo $z . "-";
+}
+
+echo $z;
+
+?>
