@@ -1,0 +1,50 @@
+<?php
+
+echo "Odaberite akciju:\n";
+echo "(A) - usporedba dva broja\n";
+echo "(B) - provjera jednog broja\n";
+
+$akcija = readline("Vas odabir: ");
+
+if($akcija == "A" || $akcija == "a")
+{
+    $br1 = (int)readline("Broj 1: ");
+    $br2 = (int)readline("Broj 2: ");  
+
+    if($br1 < $br2)
+    {
+        echo $br1 . " je manji od " . $br2 . "\n";
+    }
+    elseif($br1 == $br2)
+    {
+        echo $br1 . " je jednak " . $br2 . "\n";
+    }
+    else
+    {
+        echo $br1 . " je veci od " . $br2 . "\n";
+    }
+}
+elseif($akcija == "B" || $akcija == "b")
+{
+    $br = readline("Broj: ");
+
+    if($br < 0)
+    {
+        echo "Broj je negativan\n";
+    }
+    elseif($br == 0)
+    {
+        echo "Broj je 0\n";
+    }
+    else
+    {
+        echo "Broj je pozitivan\n";
+    }
+}
+else
+{
+    echo "Pogresna akcija! Pokusajte ponovo!\n";
+    exit;
+}
+
+?>
