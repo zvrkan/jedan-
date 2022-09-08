@@ -1,0 +1,23 @@
+<?php
+
+// suma 5 brojeva koja su trazena od korisnika
+
+$brojevi = array();
+
+for($i=1; $i<=5; $i++)
+{
+    $brojevi[] = (int)readline("Broj " . $i . " = ");
+}
+
+$suma = 0;
+
+for($i = 0; $i < count($brojevi); $i++)
+{
+    $b = $brojevi[$i];
+
+    $suma += $b;
+}
+
+echo "Suma brojeva je: " . $suma . "\n";
+
+?>
