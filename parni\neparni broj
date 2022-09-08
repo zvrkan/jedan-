@@ -1,0 +1,15 @@
+<?php
+// Napišite program koji od korisnika učitava jedan cijeli broj te ispisuje je li paran ili ne.
+
+$broj = readline("Upišite jedan cijeli broj: ");
+
+if($broj % 2 == 0)
+{
+    echo "Broj je paran."; 
+}
+else
+{
+    echo "Broj je neparan.";  
+}
+
+?>
