@@ -5,6 +5,12 @@ te ispisuje dva zrcalna pravokutna trokuta od A redaka,
 razmaknuta točno jednim razmakom. Primjer za A = 7:
 */
 
+***** *****
+ **** ****
+  *** ***
+   ** **
+    * *
+
 $a = (int)readline("Unesite cijeli broj: ");
 
 for ($j = 0; $j < $a; $j++) {
