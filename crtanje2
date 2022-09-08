@@ -1,0 +1,36 @@
+
+    **
+   *  *
+  *    *
+ *      *
+*        *
+
+
+<?php
+
+$n = readline("Upisite broj: ");
+
+$br_space_unutra = 0;
+
+for($i=1; $i<=$n; $i++)
+{
+    $br_space_ispred = $n - $i;
+    
+    for($j=1; $j<=$br_space_ispred; $j++)
+    {
+        echo " ";
+    }
+
+    echo "*";
+
+    for($j=1; $j<=$br_space_unutra; $j++)
+    {
+        echo " ";
+    }  
+
+    echo "*\n";
+
+    $br_space_unutra += 2;
+}
+
+?>
