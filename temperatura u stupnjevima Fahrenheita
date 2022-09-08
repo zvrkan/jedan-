@@ -1,0 +1,9 @@
+<?php
+
+$far = readline("Upisite temperaturu u stupnjevima Fahrenheita: ");
+
+$celz = ($far - 32)*5/9;
+
+echo "$celz C"." "." je $far F"
+
+?>
