@@ -1,0 +1,79 @@
+<?php
+/*korisnik upisuje kraticu dana, 
+ako je upisao SUB - treba ispisati ' 6.dan, vikend*/
+
+$ponovi = true;
+while($ponovi == true)
+{
+    echo "-------------------------------";
+    echo "\n";
+    echo "Odaberite jedan dan u tjednu: ";
+    echo "\n";
+    echo "PON, UTO, SRI, CET, PET, SUB, NED";
+    echo "\n";
+
+    $odabir = readline("Napisite svoj odabir: ");
+
+    if($odabir == "PON")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Prvi dan u tjednu, radni dan.";
+            echo "\n";
+        }
+
+    if($odabir == "UTO")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Drugi dan u tjednu, radni dan.";
+            echo "\n";
+        }
+                
+    if($odabir == "SRI")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Treći dan u tjednu, radni dan.";
+            echo "\n";
+        }
+            
+    if($odabir == "CET")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Cetvrti dan u tjednu, radni dan.";
+            echo "\n";
+        }
+                
+    if($odabir == "PET")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Peti dan u tjednu, radni dan.";
+            echo "\n";
+         }
+            
+    if($odabir == "SUB")
+        {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Sesti dan u tjednu, vikend:)";
+            echo "\n";
+        }
+                    
+    if($odabir == "NED")
+         {
+            echo "-------------------------------";
+            echo "\n";
+            echo "Sedmi dan u tjednu, vikend:)";
+            echo "\n";
+        }
+
+    $q = readline("Zelite li upisati jos dana? (DA/NE) ");
+    if ($q == "NE")
+    {
+        $ponovi = false;
+    }
+}
+?>
